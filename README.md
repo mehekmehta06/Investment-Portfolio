@@ -60,7 +60,6 @@ finance/
 
 ## ⚙️ Installation & Setup
 
-```plaintext
 ### 1. Clone the Repository
 
 ```bash
@@ -87,3 +86,5 @@ python manage.py migrate
 
 ```bash
 python manage.py runserver
+
+---
