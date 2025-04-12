@@ -19,22 +19,68 @@ A secure and scalable backend system for managing investment portfolios, built u
 - **Backend**: Django Rest Framework (DRF)
 - **Database**: SQLite
 - **Auth**: Token-based Authentication (DRF’s TokenAuth)
-- **APIs**: Third-party Financial APIs (e.g., Alpha Vantage / Finnhub / yFinance)
+- **APIs**: Third-party Financial APIs 
 - **Payments**: Razorpay API
 - **Testing**: Postman
 - **Version Control**: Git + GitHub
 
 ---
 
-## 📁 Project Structure
+## 🏗️ Project Structure
+
+```plaintext
+finance/
+│
+├── finance/                 # Django project configuration
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── portfolioapp/            # Core portfolio app
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── decorators.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── permissions.py
+│   ├── serializers.py
+│   ├── tests.py
+│   ├── urls.py
+│   ├── views.py
+│   ├── migrations/
+│   └── templates/
+│
+├── db.sqlite3               # SQLite database
+└── manage.py                # Django management script
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
 
 ```bash
-investment-portfolio/
-│
-├── core/                  # Django project settings
-├── portfolio/             # Portfolio app (models, serializers, views, urls)
-├── users/                 # User management and auth
-├── payments/              # Razorpay integration logic
-├── requirements.txt       # Python dependencies
-├── manage.py              # Django CLI
-└── README.md              # This file
+git clone https://github.com/mehekmehta06/investment-portfolio.git
+cd investment-portfolio-api
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+
+### 4. Apply Migrations
+
+```bash
+python manage.py migrate
+
+### 5. Run the Server
+
+```bash
+python manage.py runserver
