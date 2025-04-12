@@ -56,8 +56,11 @@ finance/
 ├── db.sqlite3               # SQLite database
 └── manage.py                # Django management script
 
+---
+
 ## ⚙️ Installation & Setup
 
+```plaintext
 ### 1. Clone the Repository
 
 ```bash
