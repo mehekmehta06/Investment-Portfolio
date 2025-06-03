@@ -56,10 +56,3 @@ finance/
 ├── db.sqlite3               # SQLite database
 └── manage.py                # Django management script
 
-![image]("C:\Users\mehek\OneDrive\Pictures\Screenshots\Screenshot 2025-06-03 164852.png")
-
-
-
-
-
-
