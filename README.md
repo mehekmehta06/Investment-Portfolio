@@ -56,3 +56,10 @@ finance/
 ├── db.sqlite3               # SQLite database
 └── manage.py                # Django management script
 
+![image](https://github.com/user-attachments/assets/3e89b30a-3c50-4185-a874-d5f747f97661)
+
+![image](https://github.com/user-attachments/assets/c0530580-2e0f-4df2-91b7-94d2ec132bc5)
+
+
+
+
